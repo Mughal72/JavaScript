@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js object part-2</title>
+    <script>
+        /* oobject creation second way 2) By creating instance of Object
+        The syntax of creating object directly is given below:
+        var objectname=new Object();  
+        Here, new keyword is used to create object.*/
+
+        var person = new Object();
+        person.firtsName = 'Anber';
+        person.lastName = 'Sattar';
+        person.age = 25;
+
+        document.write(person.firtsName + " " + person.lastName + " " + person.age);
+
+        document.write("<br><br>");
+
+     /*3) By using an Object constructor
+Here, you need to create function with arguments. Each argument value can be assigned in the current object by using this keyword.
+The this keyword refers to the current object.*/
+
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+}  
+e=new emp(103,"Anber Sattar",30000);  
+  
+document.write(e.id+" "+e.name+" "+e.salary);  
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

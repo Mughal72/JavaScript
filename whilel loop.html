@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+    <script>
+        /* var a = 1;
+ 
+         document.write("<ul>");
+         while (a <= 10) { //10 times hello will print
+             // document.write(a + ") Hello Everyone <br>");
+             document.write("<li>" + a + ") Hello Everyone </li>");
+               //loop can also print in html tags    
+ 
+             a = a+1;
+             
+         }
+         document.write("</ul>");*/
+
+
+        //if you want to print in reverse order 
+
+        var a = 10;
+
+        document.write("<ul>");
+        while (a >= 1) { //10 times hello will print
+            // document.write(a + ") Hello Everyone <br>");
+            document.write("<li>" + a + ") Hello Everyone </li>");
+            //loop can also print in html tags    
+
+            a = a - 1;
+
+        }
+        document.write("</ul>");
+
+        /*let n = 0;
+
+        while (n < 3) {
+            n++;
+        }
+
+        console.log(n);
+// expected output: 3*/
+
+let n = 0;
+let x = 0;
+
+while (n < 3) {
+  n++;
+  x += n;
+}
+/*Each iteration, the loop increments n and adds it to x. Therefore, x and n take on the following values:
+
+After the first pass: n = 1 and x = 1
+After the second pass: n = 2 and x = 3
+After the third pass: n = 3 and x = 6
+After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.*/
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

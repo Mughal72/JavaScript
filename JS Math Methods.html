@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Math Methods</title>
+    <script>
+
+        /*Method-1 ceil(x): it will work when number vakue is in float form and return the upper value.
+         It returns a smallest integer value, greater than or equal to the given number. */
+
+        var a = Math.ceil(1.2);//2 return -2.53 will return down value 
+        document.write(a);
+
+        document.write("<br>");
+
+        /*Metho-2 floor(x): It returns largest integer value, lower than or equal to the given number. Always give downward intergr nearest*/
+
+        var b = Math.floor(5.10); //5 return
+        document.write(b);
+
+        document.write("<br>");
+
+        /*Metho-3 round(x): The JavaScript math round() method rounds up the given number up to the closest integer value and returns it. If the given number is already an integer, the round() method returns it directly.
+The round() method is represented by the following syntax:Math.round(num)  */
+
+          var c = Math.round(5.90);
+        document.write(c);
+
+        document.write("<br>");
+
+        /*Metho-4 trunc(x): The JavaScript math trunc() method removes the fractional part of the given number and returns the remaining integer part only.
+Syntax: Math.trunc(num)  */
+
+         var d =Math.trunc(555.8 ); //only integer value will return 
+        document.write(d );
+
+        document.write("<br>");
+
+        /*Metho-5 max(x,y,z,......n):  */
+        
+        var e = Math.max(10,4.5,7,0,20);
+        document.write(e + " : is the max value");
+
+        document.write("<br>");
+        
+        /*Metho-6 min(x,y,z,......n):*/
+        
+        var f = Math.min(-4,5,90,-2);
+        document.write(f + " : is min value");
+
+        document.write("<br>");
+
+        /*Metho-7 sqrt(x): sqaure root- The JavaScript math sqrt() method returns the square root of a number. If the provided number is negative, it returns NaN.*/
+
+         var g = Math.sqrt(7);
+        document.write(g + ": is a sqrt of 7");
+
+        document.write("<br>");
+
+        /* Method-8 cbrt(x): cubic root- The JavaScript math cbrt() method returns the cube root of the given number. Unlike sqrt() method, this method accepts negative number.*/
+
+        var h = Math.cbrt(- 125);
+        document.write(h + " : is a cube root of -125");
+
+        document.write("<br>");
+
+        /* Method-9 pow(x,y): The JavaScript math pow() method returns the base to the exponent power such as baseexponent. In other words, the base value (x) is multiplied with itself exponent times (y).
+Syntax:Math.pow(base,exponent) */
+
+        var i = Math.pow(4,3);
+        document.write(i + " : is a power ");
+
+        document.write("<br>");
+
+        /* Method-10 random(): The JavaScript math random() method returns the random number between 0 (inclusive) and 1 (exclusive).*/
+
+        // var j = Math.random();
+        var j = Math.floor(Math.random() * 10) + 1; //retrun value between 1-10 each time 
+        document.write(j + ": is a random number");
+
+        document.write("<br>");
+
+        /*Method-11 abs(x): The JavaScript math abs() method returns an absolute value of a given number. The abs() is a static method of Math.*/
+       
+        var k = Math.abs(5.25); 
+        // var k = Math.abs(5+25); 
+        document.write(k + " : is absolute value of 5.25");
+
+        document.write("<br>");
+
+        /*Method-12 PI property of math return constant value */
+
+        var l = Math.PI;  // 22/7
+        document.write(l + "  : is a value of Pi"); 
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Number Methods</title>
+    <script>
+
+        /* Number method-1 Number(): convert string to number   */
+
+        // var  a ="99";
+        var a = true;  //1 aye ga o/p  "99 88" if we give space b/w numbers so it'll show not a number in o/p
+
+        var num = Number(a);
+
+        document.write(num);
+        // document.write(num + 10);
+        // document.write(a + 10);
+
+        document.write("<br>");
+
+        /* Number method-2 :  parseInt(): work like number if we give number in decimal form it will convert it into interger without decimal */
+
+        //var b = "99 88 77";//jo first value mily gi usy retrun krde ga 
+        //    var b = 33.55;  //33 will return 
+        //    var b = "00500 years";
+        var b = "he is man"; //no integer value in starting so NaN will return   
+        var num = parseInt(b);
+        document.write(num);
+
+        document.write("<br>");
+
+        /* Number method-3 : parseFloat(): if we give number without decimal then it will convert into decimal The parseInt() method parses the given string argument and returns a floating-point number parsed from the string. */
+
+        //var  c = 88; //NAN retrun
+        // var c = 88.89;
+        var c = "88.89 years";
+        var num = parseFloat(c);
+        document.write(num);
+
+        document.write("<br>");
+
+        /* Number method-4 : isFinite(): The isFinite() method checks whether the passed value is a finite number. This method returns a Boolean value (true or false) that indicates whether the given value is finite or not. */
+
+        var d = 9999; //true
+        // var d = "amber" ;//false   //var d = Infinity; // false return
+        var num = Number.isFinite(d);
+        document.write(num);
+
+        document.write("<br>");
+
+        /* Number method-5 : isInteger(): The isInteger() method checks whether the passed value is an integer. This method returns a Boolean value (true or false) that indicates whether the given value is an integer or not.  */
+
+        // var e = Infinity; //false 10.50 will also false
+        var e = 100; //true -50 will also , true 10-5 will true
+        var num = Number.isInteger(e);
+        document.write(num);
+
+        document.write("<br>");
+
+        /* Number method-6 : toFixed(): The toFixed() method returns a string that represents a number formatted 
+        using fixed-point notation. This method accepts an optional parameter that specifies the number of digits 
+        to appear after the decimal point. If no parameter is provided, the value of this parameter is treated as 0. */
+
+        var f = 5.6789;
+        var num = f.toFixed(2);
+          document.write(num);
+
+        document.write("<br>");
+
+        /* Number method-7 :toPrecision(): The toPrecision() method returns a string representing the number to
+ the specified precision. This method accepts an optional parameter that specifies the number of significant digits.  */
+
+    var g = 5.36789;
+    var num = g.toPrecision(4); 
+    document.write(num);
+    
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

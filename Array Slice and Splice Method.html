@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Slice and Splice Method</title>
+    <script>
+        var a = ["Anber", "Amna", "Kinza", "sheen", "Eysha"];
+
+        document.write(a + "<br><br>");
+
+        //slice() function
+
+        // var  b = a.slice(1,4); 
+        // if we write -1,-4 then reverse order mn chly ga
+        var b = a.slice(-3, -1);
+        document.write(b);
+
+        document.write("<br><br>");
+
+        //splice() function splice will change the existing array
+        // a.splice(-2,1, "Neha", "Rahul");
+        a.splice(2,2); //2 index se start ho or 2 values ko remove krdy 
+        document.write(a + "<br><br>");
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

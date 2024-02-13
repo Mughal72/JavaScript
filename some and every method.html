@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array some() & every() method</title>
+    <script>
+        // var ages=[10,13,15,20];
+        var ages=[100,19,25,20];
+        document.write( ages + "<br><br>");
+
+        // var b =ages.some(CheckAdult); //ek b value condition se pass hogai tu true ajai ga return mn
+        var b =ages.every(CheckAdult); //jb tk sari values true return na krein function ki tb tk ye check kry ga 
+        document.write( b + "<br><br>");
+
+        function CheckAdult(age){
+
+            return age >=18;
+
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

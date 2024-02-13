@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map method</title>
+    <script>
+        /*var ary = [11,4,9,6];
+
+        var b = ary.map(test);
+        document.write(b);
+
+        function test(x){
+
+            return x * 10;
+
+        }*/
+
+        // create array of objects
+
+        var ary = [
+            {fname : "Anber", lname : "Sattar", age : 20},
+            {fname : "Amna", lname : "Afzal", age : 21}
+            
+        ];
+
+        var b = ary.map(test);
+        document.write(b);
+
+        function test(x){
+//x is object
+            return x.fname + " " + x.lname + "<br>" ;
+
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

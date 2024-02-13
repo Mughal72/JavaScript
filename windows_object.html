@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS BOM- windows object method:</title>
+</head>
+
+<!-- Tut85  -->
+<body onresize="resizeFunction()">
+   <script>
+    function resizeFunction(){
+         console.clear();
+
+    //     var iHeight = window.innerHeight;
+    // console.log('Inner Height :' +iHeight);
+    
+    /*The innerHeight property returns the height of a window's content area. 
+    The innerHeight property is read only. The the inner height of the browser window's content area in pixels.*/
+    
+    // var oHeight = window.outerHeight;
+    // console.log('Outer Height :' + oHeight);
+  
+    /*TheouterHeight property returns the outer height of the browser window, including all interface elements (like toolbars/scrollbars).
+The outerHeight property is read only.The height of the browser's window, including all interface elements, in pixels. */
+    
+ var iWidth =  window.innerWidth;
+     console.log( "Inner Width : " + iWidth); 
+   
+     /* The innerWidth property returns the width of a window's content area.
+The innerWidth property is read-only*/
+
+var oWidth = window.outerWidth;
+console.log("Outer Width : " + oWidth);
+
+/*The outerWidth property returns the outer width of the browser window, including all interface elements (like toolbars/scrollbars).
+TheouterWidth property is read only.*/
+}
+    
+
+   
+
+
+
+
+   </script> 
+    
+</body>
+</html>

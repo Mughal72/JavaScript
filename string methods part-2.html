@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods part-2</title>
+    <script>
+
+        var str = "JavaScript is a Great Language"
+        var str2 = "Hello";
+
+        // method-13 charAt(): The charAt() method returns the character at a specified index (position) in a string.The index of the first character is 0, the second 1, ...
+
+        var a = str.charAt(3);
+        document.write(a);
+
+        document.write("<br>");
+
+        /* method-14 charCodeAt(): The charCodeAt() method returns the Unicode of the character at a specified index (position) in a string.
+    The index of the first character is 0, the second is 1, ....
+    The index of the last character is string length - 1*/
+
+        var a = str.charCodeAt(1);  //ASCII code
+        document.write(a);
+
+        document.write("<br>");
+
+        /* method-15 fromCharCode(): The String.fromCharCode() method converts Unicode values to characters.
+       The String.fromCharCode() is a static method of the String object. The syntax is always String.fromCharCode().
+       You cannot use myString.fromCharCode().
+   Syntax:
+   String.fromCharCode(n1, n2, ..., nX)*/
+
+        var a = String.fromCharCode(90);
+        document.write(a);
+
+        document.write("<br>");
+
+        /* mehod-16 The concat() method joins two or more strings.The concat() method does not change the existing strings.
+   The concat() method returns a new string.
+   Syntax:
+   string.concat(string1, string2, ..., stringX)*/
+
+        var a = str.concat(" " + str2);
+        document.write(a);
+
+        document.write("<br>");
+
+        /*method-17 split(): The split() method splits a string into an array of substrings.The split() method returns the new array.
+The split() method does not change the original string. If (" ") is used as separator, the string is split between words.*/
+
+        var a = str.split(" "); //jahan space a rh wahan se split hojay ga  hm character ko bh likr kr split krskty hn 
+        document.write(a);
+
+        document.write("<br>");
+
+        /*method-18 repeat():The repeat() method returns a string with a number of copies of a string.The repeat() method returns a new string.
+The repeat() method does not change the original string. Syntax: string.repeat(count)*/
+
+        var a = str.repeat(2);
+        document.write(a);
+
+        document.write("<br>");
+
+        /*method-19 slice(): The slice() method extracts a part of a string. The slice() method returns the extracted part in a new string.
+The slice() method does not change the original string. The start and end parameters specifies the part of the string to extract.
+The first position is 0, the second is 1, ... A negative number selects from the end of the string. */
+
+        var a = str.slice(-1);
+        document.write(a);
+
+        document.write("<br>");
+
+        /*method-20 substr():The substr() method extracts a part of a string.The substr() method begins at a specified position, and returns a specified number of characters.
+The substr() method does not change the original string. To extract characters from the end of the string, use a negative start position.
+syntax: string.substr(start, length)*/
+
+        // var a = str.substr(5,9);
+
+        /*The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
+ The substring() method extracts characters from start to end (exclusive).The substring() method does not change the original string.
+If start is greater than end, arguments are swapped: (4, 1) = (1, 4). Start or end values less than 0, are treated as 0.*/
+
+        var a = str.substring(3, 5);//c ko count nh kry ga wo 5 position pr h 
+        document.write(a);
+
+        document.write("<br>");
+
+        /*method-21 toString(): The toString() method returns a string as a string.The toString() method does not change the original string.
+ The toString() method can be used to convert a string object into a string.*/
+
+        var str3 = 50;
+        var a = str3.toString();
+        document.write(a + 20);
+
+        document.write("<br>");
+
+        /*method-22 valueOf(): The valueOf() method returns the primitive value of a string.The valueOf() method does not change the original string.
+    The valueOf() method can be used to convert a string object into a string.*/
+
+    var  a = str.valueOf();
+    document.write(a);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

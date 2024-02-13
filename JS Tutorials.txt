@@ -1,0 +1,1445 @@
+﻿=>Tut1: JS intro
+There are two types of web based scripting languages
+1. Client side script
+type: VB script, Javascript thistype is very popular in the world
+
+2. Server side script: It is opposite of client side script ,It does not load in your browser whenever your client
+request at server side because it will run on server and in return it will give you HTML, serve side Php,.net,python
+and son on 
+
+Why we learn Javascript?
+It is event based programming language event like:  click, double click, right click, mouse hover, mouse out, drag drop, key press,
+key up, load, unload, scroll, resize, and son on.
+
+Benifits of learning Javascript
+-web development: jquery, angualr js, react js, VueJs, NodeJS
+-Desktop App development: Electron JS (commbination of angularJS+NodeJS)
+-Mobile App development: React Native, angualr js, react js, VueJs, NodeJS
+
+=>Tut2: Implementation of Javascript
+
+There are 2 ways to implement Javascript
+. Inpage Javascript .External Javascript
+
+=>Tut3: Add HTML tags in js
+
+=>Tut4: JS comments
+// -single line comment 
+/* */ - multiple line comment
+
+=>Tut5: JS Variables
+Three types of Variables: 1- var 2- const 3- Let
+
+1- Var example:
+
+<script>
+       var x= "Hello";
+       </script>
+
+How to write variable name?
+* write way
+.firstname .first_name .first-name .firstName .firstname99
+
+* Wrong way
+.first name .99firstname 
+
+=> Tut6: JS Variables 
+2- Let 3- const
+
+=> Tut7  JS DATA TYPES
+* Types of value is data type
+if var x= "Hello world"; this type is called string if it is in qouble/single qouotesor long string/single character
+if var x = 55; this is called number data type
+if var x = true; this is called bollean 
+if var x = ["HTML","CSS", "JS"]; this is called array
+if var x ={first:"jane",last:"nxnbx"}; object data type 
+if var x = null; null
+if var x; undefined
+
+=> Tut8: Arithmetic Operators in JS
+Different types of Arithmetic Operators:
++,-,*,**(exponentiation),/(division),%(modulus) remainder,++(increament),--decreament
+
+=> Tut9: JS assignment Operators
+=> Tut10: JS google chrome console
+main work of consoleis to show the errors in your js code
+=>Tut11: JS comparison Operators
+=> Tut12: JS if statement
+if----->conditions----->False---->Out
+          .
+          .   
+          .
+          .
+        true
+          .
+          .
+          .
+          .
+        statement
+
+if(condition true){
+       statement
+
+}
+example:
+var x = 15;
+if(x>10){
+       document.write("x is greater");
+
+}
+
+=>Tut13: Logical Operators
+In logical Operators if two condition will true then statement will execute if they are False then statement will out
+logical Operators types: && AND, || OR, ! logical Not
+
+example:
+* AND 
+if(condition 1 && condition 2){
+       //run only if both conditions true
+}
+
+* OR
+if(condition1 || condition2){
+       //run only either one condition must be True
+}
+
+* ! NOT
+if (! condition){
+       //if condition is true then logical NOT Operator give false answer, if false condition then answer will be True
+  
+     reverse order mn answer miy ga NOT Operator  
+}
+
+=> Tut14: If else statement
+if (condition true){
+       statement for true
+}else{
+      statement for false
+}
+
+* example
+
+var x = 15;
+if(x>=30){
+       document.write("X is greater");
+}else{
+       document.write("X is smaller");
+}
+
+=> What is = in JavaScript?
+Equal to (=) is an assignment operator, which sets the variable on the left of the = to the value of the expression that is on its right. This operator assigns lvalue to rvalue.
+
+For example, Writing a=10 is fine. If we write 10=10, ‘a’ = 10 or ‘a’ = ‘a’, it will result in a reference error.
+
+=> What is == in JavaScript?
+Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.
+So, when you compare string with a number, JavaScript converts any string to a number. An empty string is always converts to zero. A string with no numeric value is converts to NaN (Not a Number), which returns false.
+
+=> What is === in JavaScript?
+=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality. If we compare 2 with “2” using ===, then it will return a false value.
+
+=> Why use = in JavaScript?
+Here are the important uses of = in JavaScript:
+= JavaScript operator assigns a value to the left operand depends on the value of operand available on the right side. The first operand should be a variable.
+The basic assignment operator is =, that assigns the value of one operand to another. That is, a = b assigns the value of b to a.
+
+=> Why use == in JavaScript?
+Here are the important uses of == in JavaScript:
+The == operator is an equality operator. It checks whether its two operands are the same or not by changing expression from one data type to others. You can use == operator in order to compare the identity of two operands even though, they are not of a similar type.
+
+=> How === Works Exactly?
+Strict equality === checks that two values are the same or not.
+Value are not implicitly converted to some other value before comparison.
+If the variable values are of different types, then the values are considered as unequal.
+If the variable are of the same type, are not numeric, and have the same value, they are considered as equal.
+Lastly, If both variable values are numbers, they are considered equal if both are not NaN (Not a Number) and are the same value.
+
+
+=> = Vs == VS === in JavaScript
+Here are the important differences between =, ==, and ===
+
+=                                                  
+1- = in JavaScript is used for assigning         
+values to a variable.
+2- it is called as assignment Operator
+3- The assignment operator can evaluate 
+to the assigned value.
+4- It does not return true or false
+5- = simply assign one value of variable 
+to another one.
+6- = will not compare the value of
+ variables at all.
+
+
+== 
+1- == in JavaScript is used for comparing two variables, 
+but it ignores the datatype of variable.
+2- It is called as comparison operator
+3- Checks the equality of two operands without
+ considering their type.
+4- Return true if the two operands are equal. It will return false if the two operands are not equal.
+5- == make type correction based upon values of variables
+6- The == checks for equality only after doing necessary conversations.
+
+===
+1- === is used for comparing two variables, but this operator 
+also checks datatype and compares two values. 
+2- It is also called as comparison operator
+3- Compares equality of two operands with their types.
+4- It returns true only if both values and data types are 
+the same for the two variables.
+5- === takes type of variable in consideration.
+6- If two variable values are not similar, then === will not perform any conversion.
+
+=> KEY DIFFERENCES:
+
+= is used for assigning values to a variable, == is used for comparing two variables, but it ignores the datatype of variable whereas === is used for comparing two variables, but this operator also checks datatype and compares two values.
+= is called as assignment operator, == is called as comparison operator whereas It is also called as comparison operator.
+= does not return true or false, == Return true only if the two operands are equal while === returns true only if both values and data types are the same for the two variables.
+
+=> Tut15: If else if statement
+if(condition 1){
+
+}else if(condition2){
+       
+}else{
+
+}
+
+example
+if(time<10){
+       document.write("Good Morning");
+       }
+       else if(time < 20){
+       document.write("Good Afternoon");
+}else{
+       document.write("Good Night");
+
+}
+
+=> Tut16: conditional (Ternray) Operator
+
+conditions -------->False------>statement 2
+   .
+   .
+   .
+   .
+   .
+   .
+ True
+   .
+   .
+   .
+   .
+   .
+Statement
+
+(condition)? //round brackets are optional True Statement: False Statement
+=> example
+   var x =15;
+   var z;
+   (x>10)? z ="True" : z = "False";
+
+=> JS Switch Case:
+switch statements can have a cleaner syntax over complicated if else statements.
+
+**In programming, a switch statement is a control-flow statement that tests the value of an expression against multiple cases.
+
+This is the basic syntax for a switch statement:
+
+switch (expression) {
+  case condition1: statement(s)
+   //this code will execute if the case matches the expression
+    break;
+  case condition2:statement(s)
+   //this code will execute if the case matches the expression
+    break;
+  case condition3:statement(s)
+   //this code will execute if the case matches the expression
+    break;
+  default:
+    //this code will execute if none of the cases match the expression
+    break;
+}
+
+The computer will go through  the switch statement and check for strict equality === between the case and expression.  If one of the cases matches the expression, then the code inside that case clause will execute.
+
+switch (expression) {
+  case 1:
+   //this code will execute if the case matches the expression
+    break;
+  case 2:
+   //this code will execute if the case matches the expression
+    break;
+}
+If none of the cases match the expression, then the default clause will be executed.
+
+  default:
+    //this code will execute if none of the cases match the expression
+    break;
+If multiples cases match the switch statement, then the first case that matches the expression will be used.
+
+break statements will break out of the switch when the case is matched. If break statements are not present, then the computer will continue through the switch statement even if a match is found.
+
+If return statements are present in the switch, then you don't need a break statement.
+
+=> Tut18: JS Alert Box
+Alert Box is used to display the message 
+
+=> Tut19: JS Confirm Box
+A confirm box is often used if you want the user to verify or accept something. When a confirm box pops up, 
+the user will have to click either "OK" or "Cancel" to proceed. If the user clicks "OK", the box returns true.
+ If the user clicks "Cancel", the box returns false.
+
+NOTE:
+1- A confirm box is often used if you want the user to verify or accept something.
+2- A confirm box takes the focus away from the current window, and forces the user to read the message.
+3- Do not overuse this method. It prevents the user from accessing other parts of the page until the box is closed.
+
+ => Tut20: Prompt Box
+
+The prompt() method displays a dialog box that prompts the user for input.
+The prompt() method returns the input value if the user clicks "OK", otherwise it returns null.
+
+Note
+1- A prompt box is used if you want the user to input a value.
+2- When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+3- Do not overuse this method. It prevents the user from accessing other parts of the page until the box is closed.
+
+Syntax
+prompt(text, defaultText)
+A string: If the user clicks "OK", the input value is returned.Otherwise null is returned.
+
+=> Tut21: JS Function
+
+In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want.
+A JavaScript function can be defined using function keyword.
+
+Syntax:
+//defining a function
+function <function-name>()
+{
+    // code to be executed
+};
+
+//calling a function
+<function-name>();
+
+=> Tut22: Functions With Parameter
+
+A function can have one or more parameters, which will be supplied by the calling code and can be used inside 
+a function. JavaScript is a dynamic type scripting language,so a function parameter can have value of any data type.
+
+example:
+    var  a =10;     .................     var a = 30;    ..................   var a = 50;
+    var b = 20;                           var b = 40                          var b = 60;
+    document.write(a+b);                document.write(a+b);               document.write(a+b);
+
+    function sum(a,b){
+document.write(a+b)
+    }
+    sum(10,20);
+    ......
+    sum(30,40);
+    .....
+    sum(50,60)
+
+We can pass arbitrary data to functions using parameters.
+In the example below, the function has two parameters: from and text.
+
+You can pass less or more arguments while calling a function. If you pass less arguments then rest of the 
+parameters will be undefined. If you pass more arguments then additional arguments will be ignored.
+    
+When a value is passed as a function parameter, it’s also called an argument.
+
+In other words, to put these terms straight:
+
+A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term).
+An argument is the value that is passed to the function when it is called (it’s a call time term).
+We declare functions listing their parameters, then call them passing arguments.
+
+In the example above, one might say: "the function showMessage is declared with two parameters, then called with two arguments: from and "Hello"".
+
+
+=>tut23: JS Function with return value
+A function can return a value back into the calling code as the result.
+
+=> Tut24: Local and Global Variables
+variable outside of the function is global variable and varible which is inside the function is local variable
+
+Variables: It holds the data or information which can be changed anytime. JavaScript use reserved keyword var 
+to declare variables. In JavaScript, there are two types of variable and also it tells you where in your 
+program you are allowed to use the variables and functions that you’ve defined.
+
+Local Variable:
+When you use JavaScript, local variables are variables that are defined within functions. They have local scope, which means that they can only be used within the functions that define them.
+
+Global Variable:
+In contrast, global variables are variables that are defined outside of functions. These variables have global scope, so they can be used by any function without passing them to the function as parameters.
+
+Local Variable: Since local variables are defined inside the function so variables with the same name can be used in different functions.
+
+
+Tut25: JS Events
+
+Mouse events:
+
+click	       onclick	When mouse click on an element
+mouseover	onmouseover	When the cursor of the mouse comes over the element
+mouseout	onmouseout	When the cursor of the mouse leaves an element
+mousedown	onmousedown	When the mouse button is pressed over the element
+mouseup	onmouseup	When the mouse button is released over the element
+mousemove	onmousemove	When the mouse movement takes place.
+double click  ondbclick
+rigth click   oncontextmenu
+
+
+Keyboard events:
+ 
+Event Performed	Event Handler	              Description
+Keydown & Keyup	onkeydown & onkeyup  	When the user press and then release the key
+Key press            onkeypress
+key up               onkeyup
+Load                 onload
+unload               onunload
+Resize               onresize
+Scroll               onscroll
+
+Form events:
+
+Event Performed             Event Handler           Description
+	    	   
+focus	                       onfocus	       When the user focuses on an element
+submit	                       onsubmit	       When the user submits the form
+blur	                       onblur	       When the focus is away from a form element
+change	                       onchange	       When the user modifies or changes the value of a form element
+
+
+Window/Document events
+Event Performed	             Event Handler	Description
+load	                             onload	When the browser finishes the loading of the page
+unload	                             onunload	When the visitor leaves the current webpage, the browser unloads it
+resize	                            onresize	When the visitor resizes the window of the browser
+
+=> Tut26: while loop
+
+Why do we use loop?
+When programmers write code, loops allow them to shorten what could be hundreds of lines of code to just a few.
+ This allows them to write the code once and repeat it as many times as needed, making it more likely for the
+  program to run as expected.
+
+
+what is loop?
+In computer programming, a loop is a sequence of instruction s that is continually repeated until a certain 
+condition is reached. Typically, a certain process is done, such as getting an item of data and changing it,
+ and then some condition is checked such as whether a counter has reached a prescribed number. If it hasn't, 
+ the next instruction in the sequence is an instruction to return to the first instruction in the sequence and
+  repeat the sequence. If the condition has been reached, the next instruction "falls through" to the next 
+  sequential instruction or branches outside the loop. A loop is a fundamental programming idea that is commonly 
+  used in writing programs.
+
+  loop i sdivided in 3 parts:
+  1- initialization 2- condition (if condition is false then out of the loop) 
+  3- increment/decrement (if condition is true)
+
+  Types of loops in Javascript:
+  1- for loop 2- while loop 3- dowhile loop 4- for/in loop (use with objects) 5- for each loop (array)
+
+=> Tut27: dowhile loop:
+The do...while statement creates a loop that executes a specified statement until the test condition evaluates 
+to false. The condition is evaluated after executing the statement, resulting in the specified statement executing
+ at least once.
+ * initialization k bad condition check nhi hoti direct loop mn aye ga or phr second time mn condition check hogi.
+=> do mtlb chlay While means jb tk condition true hai
+Syntax:
+do
+   statement
+while (condition);
+
+statement:
+A statement that is executed at least once and is re-executed each time the condition evaluates to true. 
+To execute multiple statements within the loop, use a block statement ({ /* ... */ }) to group those statements.
+
+condition:
+An expression evaluated after each pass through the loop. If condition evaluates to true, the statement is 
+re-executed. When condition evaluates to false, control passes to the statement following the do...while.
+
+Note: Use the break statement to stop a loop before condition evaluates to true.
+
+=> Tut28: For loop
+The for statement creates a loop that consists of three optional expressions, enclosed in parentheses and 
+separated by semicolons, followed by a statement (usually a block statement) to be executed in the loop.
+
+Syntax:
+for ([initialization]; [condition]; [final-expression])
+  statement
+
+  initialization:
+An expression (including assignment expressions) or variable declaration evaluated once before the loop begins. 
+Typically used to initialize a counter variable. This expression may optionally declare new variables with var 
+or let keywords. Variables declared with var are not local to the loop, i.e. they are in the same scope the for loop is in.
+ Variables declared with let are local to the statement.
+
+The result of this expression is discarded.
+
+condition
+An expression to be evaluated before each loop iteration. If this expression evaluates to true,
+ statement is executed. If the expression evaluates to false, execution exits the loop and goes to the first 
+ statement after the for construct.
+
+This conditional test is optional. If omitted, the condition always evaluates to true.
+
+final-expression
+An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of condition.
+Generally used to update or increment the counter variable.
+
+statement
+A statement that is executed as long as the condition evaluates to true. To execute multiple statements within 
+the loop, use a block statement ({ /* ... */ }) to group those statements. To execute no statement within the 
+loop, use an empty statement (;).
+
+=> Tut29: Break and continue Statement
+The Break Statement is used to stop a loop whenever a specified condition is met and can be used simply by 
+writing break wherever you want it to occur.You can also use break in switch statements
+
+Like Break Statements, Continue Statements are used in loops but serve a little bit of a different purpose.
+ Unlike break statements, where once the condition is met the loop ends, the Continue Statement is used for 
+ skipping over an iteration of a loop.
+
+ => Tut30: Find Even & Odd Number with loop
+
+=> Tut31: Nested Loop 
+Nested Loop is a loop that is present inside another loop. Javascript supports the nested loop in javascript. 
+The loop can have one or more or simple can have any number of loops defined inside another loop, and also can
+ behave n level of nesting inside the loop.
+
+ Syntax
+
+The Syntax for Nested loop in javascript –
+
+Outerloop
+{
+Innerloop
+{
+// statements to be execute inside inner loop
+}
+// statements to be execute inside outer loop
+}
+
+if we want to show data in tablur or matrix form then we use nested loop.
+
+=>Tut32: Nested Loop -II
+
+=>Tut33: JS Arrays
+In JavaScript, an array is an ordered list of values. Each value is called an element specified by an index.
+An JavaScript array has the following characteristics:
+First, an array can hold values of mixed types. For example, you can have an array that stores elements with
+ the types number, string, and boolean.
+Second, the size of an array is dynamic and auto-growing. In other words, you don’t need to specify the array 
+size upfront.
+
+Creating JavaScript arrays
+JavaScript provides you with two ways to create an array. The first one is to use the Array constructor as follows:
+
+let scores = new Array();
+Code language: JavaScript (javascript)
+The scores array is empty, which does hold any elements.
+
+If you know the number of elements that the array will hold, you can create an array with an initial size as shown in the following example:
+
+let scores = Array(10);
+Code language: JavaScript (javascript)
+To create an array and initialize it with some elements, you pass the elements as a comma-separated list into the Array() constructor.
+
+For example, the following creates the scores array that has five elements (or numbers):
+
+let scores = new Array(9,10,8,7,6);
+Code language: JavaScript (javascript)
+Note that if you use the Array() constructor to create an array and pass a number into it, you are creating an array with an initial size.
+
+However, when you pass a value of another type like string into the Array() constructor, you create an array with an element of that value. For example:
+
+let athletes = new Array(3); // creates an array with initial size 3
+let scores = new Array(1, 2, 3); // create an array with three numbers 1,2 3
+let signs = new Array('Red'); // creates an array with one element 'Red'
+Code language: JavaScript (javascript)
+JavaScript allows you to omit the new operator when you use the Array() constructor. For example, the following statement creates the artists array.
+
+let artists = Array();
+Code language: JavaScript (javascript)
+In practice, you’ll rarely use the Array() constructor to create an array.
+
+The more preferred way to create an array is to use the array literal notation:
+
+let arrayName = [element1, element2, element3, ...];
+Code language: JavaScript (javascript)
+The array literal form uses the square brackets [] to wrap a comma-separated list of elements.
+
+The following example creates the colors array that holds string elements:
+
+let colors = ['red', 'green', 'blue'];
+Code language: JavaScript (javascript)
+To create an empty array, you use square brackets without specifying any element like this:
+
+let emptyArray = [];
+
+How Array stores values?
+var  a= [10,20,30]
+ index   0  1  2
+ 
+ =>Tut34: Create Arrays Method -2
+
+ var a = new Array(); //constructor method
+
+ =>Tut35: Multidimensional Arrays
+ Multidimensional means multiple arrays in one array
+ example:
+ var a = [        0               1        2       3
+            0 ["Anber Sattar", "19Sw33","Female" ,20],
+            1 ["Unza Sheikh", "19SW113", "Female", 20],
+            2 ["Amna Afzal", "18SW48"," Female",22]
+        ];
+        all these arrays and values save in different index number
+
+JavaScript does not provide the multidimensional array natively. However, you can create a multidimensional 
+array by defining an array of elements, where each element is also another array.
+For this reason, we can say that a JavaScript multidimensional array is an array of arrays. The easiest way to 
+define a multidimensional array is to use the array literal notation.
+To declare an empty multidimensional array, you use the same syntax as declaring one-dimensional array:
+    let activities = [];
+
+let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+];
+Code language: JavaScript (javascript)
+In the activities array, the first dimension represents the activity and the second one shows the number of hours spent per day for each.
+To show the activities array in the console, you use the console.table() method as follows:
+console.table(activities);
+
+=>Tut36: Modify and Delete Array element
+
+=>Tut37: JS Array Sort and Reverse
+Introduction to JavaScript Array sort() method:
+The sort() method allows you to sort elements of an array in place. Besides returning the sorted array, 
+the sort() method changes the positions of the elements in the original array.By default, the sort() method 
+sorts the array elements in ascending order with the smallest value first and largest value last.
+The sort() method casts elements to strings and compares the strings to determine the orders.
+
+Consider the following example:
+
+let numbers = [0, 1 , 2, 3, 10, 20, 30 ];
+numbers.sort();
+console.log(numbers);
+
+
+=>Tut38: Array pop and push method
+Pop() method: Javascript array pop() method removes the last element from an array and returns that element.
+
+Syntax
+Its syntax is as follows −
+array.pop();
+Return Value
+Returns the removed element from the array.
+
+example:
+<script type = "text/javascript">
+         var numbers = [1, 4, 9];
+         
+         var element = numbers.pop();
+         document.write("element is : " + element ); 
+         
+         var element = numbers.pop();
+         document.write("<br />element is : " + element );
+      </script>  
+
+output: element is : 9 element is : 4
+
+Push(): The Array.prototype.push() method adds one or more elements to the end of an array and returns the new array’s length.
+
+The following shows the syntax of the push() method:
+
+push(newElement);
+push(newElement1,newElement2);
+push(newElement1,newElement2,...,newElementN);
+
+The push() method returns the new value of the length property of the array object on which you call the method.
+
+=> Tut39: Array shift and unshift method
+
+The shift() method in JavaScript removes an item from the beginning of an array and shifts every other item to the previous
+ index, whereas the unshift() method adds an item to the beginning of an array while shifting every other item to the next 
+ index. The returning value of the shift() method is the item that is removed from the array, and the unshift() method 
+ returns the new length of the array. These two methods are used a lot when working with arrays in JavaScript. 
+ 
+=>Tut40: JS array method concat and join method
+
+Conact():
+The concat() method concatenates (joins) two or more arrays.
+The concat() method returns a new array, containing the joined arrays.
+The concat() method does not change the existing arrays.
+
+Syntax
+array1.concat(array2, array3, ..., arrayX)
+
+example:
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = [1, 2, 3];
+const arr3 = arr1.concat(arr2);
+
+example:
+const arr1 = [1, 2, [3, 4]];
+const arr2 = [[5, 6], 7, 8];
+const arr3 = arr1.concat(arr2);
+
+Join():
+The join() method returns an array as a string.
+The join() method does not change the original array.
+Any separator can be specified. The default is comma (,).
+
+Syntax
+array.join(separator)
+
+=>Tut41: Slice() and Splice() Array Method
+
+Slice() function:
+The slice() method returns selected elements in an array, as a new array.
+The slice() method selects from a given start, up to a (not inclusive) given end.
+The slice() method does not change the original array.
+
+Syntax:
+array.slice(start, end)
+
+Examples:
+
+Select elements:
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits.slice(1, 3);
+
+Select elements using negative values:
+
+const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const myBest = fruits.slice(-3, -1);
+
+Splice() Function:
+The splice() method adds and/or removes array elements.
+The splice() method overwrites the original array.
+
+Syntax:
+array.splice(index, howmany, item1, ....., itemX)
+
+Examples:
+
+At position 2, add 2 elements:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+At position 2, remove 2 items:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+fruits.splice(2, 2);
+
+=>Tut42: isArray Method
+
+The isArray() method returns true if an object is an array, otherwise false.
+
+Array.isArray()
+Array.isArray() is a static property of the JavaScript Array object.
+
+You can only use it as Array.isArray().
+
+Using x.isArray(), where x is an array will return undefined.
+
+Syntax:
+Array.isArray(obj)
+
+Example:
+Check if an object is an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let result = Array.isArray(fruits);
+
+=>Tut43: JavaScript Array indexOf() & lastindexof()
+
+JavaScript Array indexOf():
+The indexOf() method returns the first index (position) of a specified value.
+The indexOf() method returns -1 if the value is not found.
+The indexOf() method starts at a specified index and searches from left to right.
+By default the search starts at the first element and ends at the last.
+Negative start values counts from the last element (but still searches from left to right).
+
+Syntax:
+array.indexOf(item, start)
+
+example:
+const fruits = ["Banana", "Orange", "Apple", "Mango", "Apple"];
+let index = fruits.indexOf("Apple", -1);
+
+JavaScript Array lastIndexOf():
+The lastIndexOf() method returns the last index (position) of a specified value.
+The lastIndexOf() method returns -1 if the value is not found.
+The lastIndexOf() starts at a specified index and searches from right to left.
+By defalt the search starts at the last element and ends at the first.
+Negative start values counts from the last element (but still searches from right to left).
+
+Syntax:
+array.lastIndexOf(item, start)
+
+example:
+<script>
+
+const fruits = ["Apple", "Orange", "Apple", "Mango"];
+let index = fruits.lastIndexOf("Apple");
+document.getElementById("demo").innerHTML = index;\
+
+</script>
+
+=>JS Array Includes() Method:
+
+The includes() method returns true if an array contains a specified value.
+The includes() method returns false if the value is not found.
+The includes() method is case sensitive.
+
+Syntax
+array.includes(element, start)
+
+=>Tu45: Array So and every method:
+
+Some():
+The some() method checks if any array elements pass a test (provided as a callback function).
+The some() method executes the callback function once for each array element.
+The some() method returns true (and stops) if the function returns true for one of the array elements.
+The some() method returns false if the function returns false for all of the array elements.
+The some() method does not execute the function for empty array elements.
+The some() method does not change the original array.
+
+Syntax:
+array.some(function(value, index, arr), this)
+
+every():
+The every() method executes a function for each array element.
+The every() method returns true if the function returns true for all elements.
+The every() method returns false if the function returns false for one element.
+The every() method does not execute the function for empty elements.
+The every() method does not change the original array
+
+Syntax:
+array.every(function(currentValue, index, arr), thisValue)
+
+=>Tut46: Array-> find() and findIndex() method
+ 
+ find():
+The find() method returns the value of the first element that passes a test.
+The find() method executes a function for each array element.
+The find() method returns undefined if no elements are found.
+The find() method does not execute the function for empty elements.
+The find() method does not change the original array.
+
+Syntax
+array.find(function(currentValue, index, arr),thisValue)
+
+findIndex():
+The findIndex() method executes a function for each array element.
+The findIndex() method returns the index (position) of the first element that passes a test.
+The findIndex() method returns -1 if no match is found.
+The findIndex() method does not execute the function for empty array elements.
+The findIndex() method does not change the original array.
+
+Syntax:
+array.findIndex(function(currentValue, index, arr), thisValue)
+
+=>Tut47: Array filter() Method
+
+Array filter():
+The filter() method creates a new array filled with elements that pass a test provided by a function.
+The filter() method does not execute the function for empty elements.
+The filter() method does not change the original array.
+
+Syntax:
+array.filter(function(currentValue, index, arr), thisValue)
+
+=> Tut48: Array toString(), valueOf(), fill() methods
+
+toString():
+The toString() method returns a string with array values separated by commas.
+The toString() method does not change the original array.
+
+Note:
+Every JavaScript object has a toString() method.
+The toString() method is used internally by JavaScript when an object needs to be displayed as a text (like in HTML),
+ or when an object needs to be used as a string. Normally, you will not use it in your own code.
+
+Syntax:
+array.toString()
+
+valueOf():
+The valueOf() method returns the array itself.
+The valueOf() method does not change the original array.
+fruits.valueOf() returns the same as fruits.
+
+Syntax:
+array.valueOf()
+
+fill():
+The fill() method fills specified elements in an array with a value.
+The fill() method overwrites the original array.
+Start and end position can be specified. If not, all elements will be filled.
+
+Syntax:
+array.fill(value, start, end)
+
+=>Tut49: Array forEach()  method
+The forEach() method calls a function for each element in an array.
+The forEach() method is not executed for empty elements.
+
+Syntax:
+array.forEach(function(currentValue, index, arr), thisValue)
+
+=>Tut50: JS Objects
+
+What Are Objects in JavaScript?
+
+An object is a data type that can take in collections of key-value pairs. A major difference between an object
+and other data types such as strings and numbers in JavaScript is that an objects can store different types of
+data as its values. On the other hand, primitive data types such as numbers and strings can store only numbers 
+and strings, respectively, as their values.
+The key, also known as the property name, is usually a string. If any other data type is used as a property 
+name other than strings, it would be converted into a string.
+You can visualize an object as a multi-purpose shelf containing space for your gadgets and ornaments as well as
+ a storage space for books, and files.
+
+JavaScript is an object-based language. Everything is an object in JavaScript.
+JavaScript is template based not class based. Here, we don't create class to get the object. But, we direct create objects.
+
+ => In JavaScript, almost "everything" is an object.
+
+Booleans can be objects (if defined with the new keyword)
+Numbers can be objects (if defined with the new keyword)
+Strings can be objects (if defined with the new keyword)
+Dates are always objects
+Maths are always objects
+Regular expressions are always objects
+Arrays are always objects
+Functions are always objects
+Objects are always objects
+All JavaScript values, except primitives, are objects.
+
+JavaScript Primitives
+A primitive value is a value that has no properties or methods.
+
+3.14 is a primitive value
+
+A primitive data type is data that has a primitive value.
+
+JavaScript defines 7 types of primitive data types:
+
+Examples
+string
+number
+boolean
+null
+undefined
+symbol
+bigint
+
+=>Creating Objects in JavaScript:
+
+There are 3 ways to create objects.
+1- By object literal
+2- By creating instance of Object directly (using new keyword)
+3- By using an object constructor (using new keyword)
+
+we can also create array in an object 
+we can aslo cretae multiple functions in object
+
+=>Tut51: JS Objects Part-2
+Object creation 
+2) By creating instance of Object
+The syntax of creating object directly is given below:
+
+var objectname=new Object();  
+Here, new keyword is used to create object.
+
+=>Tut52: Array of objects
+
+=>Tut53: const variable with array an objects
+
+=>Tut54: For/in loop
+
+this for/in loop is basically create for objects printing
+
+ How to pritn values of objects:
+var  a ={
+       firstname: 'Anber',
+       age: 19,
+       country: 'Pakistan
+};
+console.log(a.firstname);
+console.log(a.age);
+console.log(a.country);
+
+if objects haave 4 properties then you'll have to print these property four times
+so to overcome this problem for/in loop will use
+
+var  a ={
+       firstname: 'Anber',
+       age: 19,
+       country: 'Pakistan
+};
+
+for(i in a){
+       statement
+}
+
+=>Tut55: JS array Map() method
+map() creates a new array from calling a function for every array element.
+map() calls a function once for each element in an array.
+map() does not execute the function for empty elements.
+map() does not change the original array.
+
+Syntax:
+array.map(function(currentValue, index, arr), thisValue)
+
+map function is work like loop (for, each loop) but there is a difference
+ var  a=[1,3,5,8,10];
+ //[10,30,50,80,100]
+
+ a.map(function(){
+       statement
+       //some mathematical function that you want 
+ });
+
+ //basically we can not use it for printing
+
+
+=>Tut56:JS String methods:
+
+
+=>Tut57: JS String methods part-2
+JavaScript String
+The JavaScript string is an object that represents a sequence of characters.
+
+There are 2 ways to create string in JavaScript
+
+By string literal
+By string object (using new keyword)
+
+=>Tut58: JS Number Methods
+The JavaScript number object enables you to represent a numeric value. It may be integer or floating-point. JavaScript number object follows IEEE standard to represent the floating-point numbers.
+By the help of Number() constructor, you can create number object in JavaScript. For example:
+var n=new Number(value);  
+If value can't be converted to number, it returns NaN(Not a Number) that can be checked by isNaN() method.
+
+=>Tut59: JS Math Methods
+The JavaScript math object provides several constants and methods to perform mathematical operation. Unlike date object, it doesn't have constructors.
+
+=>Tut60: JS Date Methods
+The JavaScript date object can be used to get year, month and day. You can display a timer on the webpage by the help of JavaScript date object.
+You can use different Date constructors to create date object. It provides methods to get and set day, month, year, hour, minute and seconds.
+
+Constructor
+You can use 4 variant of Date constructor to create date object:
+Date()
+Date(milliseconds)
+Date(dateString)
+Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+Methods:	       Description:
+getDate()	       It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of local time.
+getDay()	       It returns the integer value between 0 and 6 that represents the day of the week on the basis of local time.
+getFullYears()       It returns the integer value that represents the year on the basis of local time.
+getHours()	       It returns the integer value between 0 and 23 that represents the hours on the basis of local time.
+getMilliseconds()	It returns the integer value between 0 and 999 that represents the milliseconds on the basis of local time.
+getMinutes()	       It returns the integer value between 0 and 59 that represents the minutes on the basis of local time.
+getMonth()	       It returns the integer value between 0 and 11 that represents the month on the basis of local time.
+getSeconds()	       It returns the integer value between 0 and 60 that represents the seconds on the basis of local time.
+getUTCDate()	       It returns the integer value between 1 and 31 that represents the day for the specified date on the basis of universal time.
+getUTCDay()	       It returns the integer value between 0 and 6 that represents the day of the week on the basis of universal time.
+getUTCFullYears()	It returns the integer value that represents the year on the basis of universal time.
+getUTCHours()	       It returns the integer value between 0 and 23 that represents the hours on the basis of universal time.
+getUTCMinutes()	It returns the integer value between 0 and 59 that represents the minutes on the basis of universal time.
+getUTCMonth()  	It returns the integer value between 0 and 11 that represents the month on the basis of universal time.
+getUTCSeconds() 	It returns the integer value between 0 and 60 that represents the seconds on the basis of universal time.
+setDate()     	It sets the day value for the specified date on the basis of local time.
+setDay()	       It sets the particular day of the week on the basis of local time.
+setFullYears()	It sets the year value for the specified date on the basis of local time.
+setHours()	       It sets the hour value for the specified date on the basis of local time.
+setMilliseconds()	It sets the millisecond value for the specified date on the basis of local time.
+setMinutes()	       It sets the minute value for the specified date on the basis of local time.
+setMonth()	       It sets the month value for the specified date on the basis of local time.
+setSeconds()	       It sets the second value for the specified date on the basis of local time.
+setUTCDate()	       It sets the day value for the specified date on the basis of universal time.
+setUTCDay()	       It sets the particular day of the week on the basis of universal time.
+setUTCFullYears()    It sets the year value for the specified date on the basis of universal time.
+setUTCHours()	       It sets the hour value for the specified date on the basis of universal time.
+setUTCMilliseconds()	It sets the millisecond value for the specified date on the basis of universal time.
+setUTCMinutes()	It sets the minute value for the specified date on the basis of universal time.
+setUTCMonth()	       It sets the month value for the specified date on the basis of universal time.
+setUTCSeconds()	It sets the second value for the specified date on the basis of universal time.
+toDateString()	It returns the date portion of a Date object.
+toISOString()	       It returns the date in the form ISO format string.
+toJSON()	       It returns a string representing the Date object. It also serializes the Date object during JSON serialization.
+toString()	       It returns the date in the form of string.
+toTimeString()	It returns the time portion of a Date object.
+toUTCString()	      It converts the specified date in the form of string using UTC time zone.
+valueOf()	      It returns the primitive value of a Date object.
+
+=>Tut61: DOM- Document Object Module Introduction:
+
+The HTML DOM (Document Object Model): When a web page is loaded, the browser creates a Document Object Model of the page.
+The HTML DOM model is constructed as a tree of Objects:
+
+
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+• JavaScript can change all the HTML elements in the page
+• JavaScript can change all the HTML attributes in the page
+• JavaScript can change all the CSS styles in the page
+• JavaScript can remove existing HTML elements and attributes
+• JavaScript can add new HTML elements and attributes
+• JavaScript can react to all existing HTML events in the page
+• JavaScript can create new HTML events in the page
+
+What is the DOM?
+The DOM is a W3C (World Wide Web Consortium) standard.
+The DOM defines a standard for accessing documents:
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+What is the HTML DOM?
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+=>Tut62: DOM Targeting Methods:
+
+How to Target DOM Objects?
+
+Most important methods are given below
+1- id         .......>  document.getElementById(id)
+2- class      ......>   document.getElementsByClassName(class name)    
+3- Tag name   .......>  document.getElementsByTagName(name)
+
+=>Tut63: JavaScript DOM Get & Set Value Methods
+
+Whta we can get with DOM?
+.html .text . attributes
+
+DOM get Methods:
+. innerHTML 
+. innerText 
+. getAttribute 
+. getAttributeNode
+. attributes
+
+DOM set Methods:
+. innerHTML 
+. innerText 
+. setAttribute 
+. Attribute
+. removeAttribute
+
+=>TUT64: DOM querySelector() and querySelectorAll()
+ 
+querySelector()
+The querySelector() method returns the first element that matches a CSS selector.
+To return all matches (not only the first), use the querySelectorAll() instead.
+Both querySelector() and querySelectorAll() throw a SYNTAX_ERR exception if the selector(s) is invalid.
+Syntax:document.querySelector(CSS selector);
+
+The querySelectorAll() method returns a static NodeList.
+
+querySelectorAll():
+The querySelectorAll() method returns all elements that matches a CSS selector(s).
+The querySelectorAll() method returns a NodeList.
+The querySelectorAll() method throws a SYNTAX_ERR exception if the selector(s) is invalid
+Syntax:document.querySelectorAll(CSS selectors);
+
+The querySelector() is a method of the Element interface. The querySelector() method allows you to select the first element that matches one or more CSS selectors.
+
+The following illustrates the syntax of the querySelector() method:
+
+let element = parentNode.querySelector(selector);
+Code language: JavaScript (javascript)
+In this syntax, the selector is a CSS selector or a group of CSS selectors to match the descendant elements of the parentNode.
+
+If the selector is not valid CSS syntax, the method will raise a SyntaxError exception.
+
+If no element matches the CSS selectors, the querySelector() returns null.
+
+The querySelector() method is available on the document object or any Element object.
+
+Besides the querySelector(), you can use the querySelectorAll() method to select all elements that match a CSS selector or a group of CSS selectors:
+
+let elementList = parentNode.querySelectorAll(selector);
+Code language: JavaScript (javascript)
+The querySelectorAll() method returns a static NodeList of elements that match the CSS selector. If no element matches, it returns an empty NodeList.
+
+Note that the NodeList is an array-like object, not an array object. However, in modern web browsers, you can use the forEach() method or the for...of loop.
+
+To convert the NodeList to an array, you use the Array.from() method like this:
+
+let nodeList = document.querySelectorAll(selector);
+let elements = Array.from(nodeList);
+
+=>tut65: DOM CSS Styling Methods
+Three method are used for styling css in DOM
+. style . className . ClassList
+
+=> tut66: JavaScript classList Methods 
+.add .remove
+
+=>tut67: classList() methods
+.add .remove .toggle(class) .contains(class) .items(index) .length
+
+=>Tut68: DOM Traversal Methods
+
+A good JavaScript developer needs to know how to traverse the DOM—it’s the act of selecting an element from another element.
+Why we traverse
+Let’s say you want to go to your neighbor’s house. What’s the fastest and most efficient way to get there?
+
+Move from your house to their house (since you already know their address)
+Lookup their address on Google maps, then walk according to the directions Google gives you.
+If you move directly from your house to their house, you’re doing the equivalent of traversing the DOM—selecting one element from a neighboring element.
+
+If you lookup their address on Google, you’re doing the equivalent of document.querySelector to find elements.
+
+The difference between parentElement and parentNode, is that parentElement returns null if the parent node is not an element node:
+
+
+=>Tut69: Children and childNode methods:
+childNodes vs children
+childNodes returns child nodes (element nodes, text nodes, and comment nodes).
+
+children returns child elements (not text and comment nodes).
+
+=> Tut70: firstChild and lastChild mehod
+
+=>Tut71:  nextSibling & previousSibling , nextElementSibling & previousElementSibling Methods 
+=>Tut72: DOM Create Methods
+1- createElement 2- createTextNode 3- createComment
+for example if you want ot insert any html tag in your html tu is element ko lgane k lie createElement comand use krein gn , javascript se html mn tag lgane k lie use hota h, text k lie createTextNode, comment k lie createComment 
+
+=>Tut37; DOM Append Methods
+Append () method is useful to create content with the help of HTML, jQuery as well as DOM. One can insert content by specifying parameter at the end of given element in terms of matched elements. This method helps user to avoid hard coding in their actual HTML code. So one can add directly required code at the end of element by using JavaScript Append() jQuery functions helps to add append functions or contents those are in terms of an HTML string, DOM element, jQuery object or text node etc.
+
+1- appendChild
+The appendChild() method appends a node (element) as the last child of an element.
+2-insertBefore
+
+=>Tut74: Append Methods
+3- insertAdjacentElement()
+The insertAdjacentElement() method of the Element interface inserts a given element node at a given position relative to the element it is invoked upon.
+
+Syntax
+insertAdjacentElement(position, element)
+
+4. insertAdjacentHTML()
+The insertAdjacentHTML() method of the Element interface parses the specified text as HTML or XML and inserts the resulting nodes into the DOM tree at a specified position.
+
+Syntax
+insertAdjacentHTML(position, text)
+
+5-insertAdjacentText()
+The insertAdjacentText() method of the Element interface, given a relative position and a string, inserts a new text node at the given position relative to the element it is called from.
+
+Syntax
+insertAdjacentText(where, data)
+
+=>Tut75: DOM replaceChild() & removeChild() methods:
+The replaceChild() method of the Node element replaces a child node within the given (parent) node.
+
+Syntax
+replaceChild(newChild, oldChild);
+
+removeChild():
+The removeChild() method of the Node interface removes a child node from the DOM and returns the removed node.
+
+Note: As long as a reference is kept on the removed child, it still exists in memory, but is no longer part of the DOM. It can still be reused later in the code.
+
+If the return value of removeChild() is not stored, and no other reference is kept, it will be automatically deleted from memory after a short time
+
+Syntax
+removeChild(child);
+
+=>Tut76: DOM chloneNode()
+
+cloneNode()
+The cloneNode() method of the Node interface returns a duplicate of the node on which this method was called. Its parameter controls if the subtree contained in a node is also cloned or not.
+
+Cloning a node copies all of its attributes and their values, including intrinsic (inline) listeners. It does not copy event listeners added using addEventListener() or those assigned to element properties (e.g., node.onclick = someFunction). Additionally, for a <canvas> element, the painted image is not copied.
+
+=> Tut77: DOM contains() nethod:
+The contains() method returns true if a node is a descendant of a node.
+
+The contains() method returns false if not.
+
+=>Tut78: JavaScript DOM hasAttribute & hasChildNodes
+
+- hasAttribute(): 
+-hasChildNodes():
+
+=>Tut79: dom isEqualNode():
+The isEqualNode() returns true if two elements (or nodes) are equal.
+
+Two nodes are equal if all of the following conditions are true:
+
+They have the same nodeType
+They have the same nodeName
+They have the same nodeValue
+They have the same nameSpaceURI
+They have the same childNodes with all the descendants
+They have the same attributes and attribute values
+They have the same localName and prefix
+
+=>Tut80: JavaScript form events
+1- focus
+
+=>Tut81: JS fom events-     II
+
+=> Tut82: JS animations
+
+JavaScript animations
+JavaScript animations can handle things that CSS can’t.
+
+For instance, moving along a complex path, with a timing function different from Bezier curves, or an animation on a canvas.
+
+=>js setinterval() and clearinterval()
+In JavaScript, a block of code can be executed in specified time intervals. These time intervals are called timing events.
+JavaScript setInterval()
+The setInterval() method repeats a block of code at every given timing event.
+
+The commonly used syntax of JavaScript setInterval is:
+
+setInterval(function, milliseconds);
+Its parameters are:
+
+function - a function containing a block of code
+milliseconds - the time interval between the execution of the function
+The setInterval() method returns an intervalID which is a positive integer.
+
+Example 1: Display a Text Once Every 1 Second
+// program to display a text using setInterval method
+function greet() {
+    console.log('Hello world');
+}
+
+setInterval(greet, 1000);
+
+=> Note: The setInterval() method is useful when you want to repeat a block of code multiple times. For example, showing a message at a fixed interval.
+
+=>clearInterval() in JavaScript
+clearInterval in JavaScript is an native function,  which is used to clear a timer set with the setInterval() method. The parameter of clearInterval() method is the ID value returned by the setInterval() method.
+
+NOTE: We must use setInterval() method before using clearInterval() method in the script code.
+
+=>Tut83: JS animations: 
+setTimout() it runs only one time , clearTimeout() 
+
+=> Tut84: Browser Object Model (BOM) Introduction
+
+The Browser Object Model (BOM) in JavaScript includes the properties and methods for JavaScript to interact with the web browser.
+
+BOM provides you with a window objects, for example, to show the width and height of the window. It also includes the window.screen object to show the width and height of the screen.
+
+BOM Methods:
+. Get width & height of browser window
+. Opne & close Browser Window
+. Move & resize browser window
+. scroll to browser window
+. get url, hostname, protocol of browser window
+. get history of browser window
+
+=> Tut85:    BOM-> Get width & height of browser window Mthods:
+. innerHeight (view port is innerHeight) . innerWidth . outerHeight (browser height but tollbar, url is not counted in outerHeight) . outerWidth
+innerHeight, outerHeight will not count scroll height
+
+Window Object
+The window object represents an open window in a browser.
+
+If a document contain frames (<iframe> tags), the browser creates one window object for the HTML document, and one additional window object for each frame
+
+=>Tut86: JavaScript Window Open & Close Method
+window.open(url, name,specs)
+
+url = website domain link
+name =  firstWindow or . _blank . _parent . _self . _top 
+specs = width, height, left, top
+
+Window.open(): This method is used to open the web pages into a new window. 
+
+Syntax:
+
+window.open(URL, name, specs, replace)
+Parameters: This method accepts four parameters as mentioned above and described below:
+
+URL: It is an optional parameter. It is used to set the URL of web pages which need to open. If URL is not set then window.open() method open a blank window.
+name: It is an optional parameter and is used to set the window name.
+specs: It is an optional parameter used to separate the item using a comma.
+replace: It is an optional parameter and used to specify the URL URL creates a new entry or replaces the current entry in the history list. This parameter returns a boolean value. If this parameter returns true then URL replaces the current document in the history list and if returns false then URL creates a new entry in the history list.
+Return Value: This method creates a new window. 
+
+Window.close(): This method is used to close the window which is opened by the window.open() method. 
+
+Syntax:
+
+window.close()
+Parameters: This method does not contain any parameters. 
+
+Return Value: This method does not return any value. Below example illustrates the window.open() and window.close() method in jQuery.
+
+JavaScript Window close method
+JavaScript provides an in-built function named close() to close the browser window that is opened by using window.open() method. Unlike the window.open() method, it does not contain any parameter. This window.close() method simply close the window or tab opened by the window.open() method.
+
+Remember that - You have to define a global JavaScript variable to hold the value returned by window.open() method, which will be used later by the close() method to close that opened window.
+
+Syntax
+window.close()  
+Here, window is the name of that window that is opened by the window open method.
+
+=> Tut87: JavaScript Window moveBy & moveTo 
+
+The moveBy() method moves a window a number of pixels relative to its current coordinates.
+The moveTo() method moves a window to the specified coordinates.
+
+=> tut88: Window Object: resizeBy() and resizeTo() Mehtods:
+=> Tut89: window object scrollTo() and scrollBy() methods:
+=>Tut90: Location Object
+The Window Location Object
+The location object contains information about the current URL.
+
+The location object is a property of the window object.
+
+The location object is accessed with:
+
+window.location or just location
+
+Location Object Properties
+Property     Description
+hash	      Sets or returns the anchor part (#) of a URL
+host	      Sets or returns the hostname and port number of a URL
+hostname     Sets or returns the hostname of a URL
+href	      Sets or returns the entire URL
+origin	      Returns the protocol, hostname and port number of a URL
+pathname     Sets or returns the path name of a URL
+port	      Sets or returns the port number of a URL
+protocol     Sets or returns the protocol of a URL
+search 	Sets or returns the querystring part of a URL
+
+Location Object Methods
+Method 	Description
+assign()      Loads a new document
+reload()	Reloads the current document
+replace()	Replaces the current document with a new one

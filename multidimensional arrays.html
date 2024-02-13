@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional Arrays</title>
+    <script>
+        
+        var ary = [
+            ["Anber Sattar", "19Sw33","Female" ,20],
+            ["Unza Sheikh", "19SW113", "Female", 20],
+            ["Amna Afzal", "18SW48"," Female",22],
+            ["Ahmed Shah", "19SW44", "Male", 21]
+        ];
+
+        //  document.write(ary[0][2]);
+        //  document.write(ary.length);
+
+        document.write("<h1>MultiDimensional Arrays </h1>");
+        document.write("<table border = '1px' cellspacing ='0'>");
+        for(var a = 0; a <ary.length; a++){
+            document.write("<tr>");
+            for(var  b = 0; b < ary[a].length; b++){
+                document.write("<td>" + ary[a][b] + "</td>" ); //first bracket is for outer loop second is for inner
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+
+        /*let activities = [
+    ['Work', 9],
+    ['Eat', 1],
+    ['Commute', 2],
+    ['Play Game', 1],
+    ['Sleep', 7]
+];
+activities.pop();
+console.table(activities);*/
+
+    
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

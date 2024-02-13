@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Window Open & Close Method</title>
+</head>
+<body>
+
+    <!-- Tut86:  -->
+   
+    <button onclick="openWindow()">Open Window</button>	
+   
+    <!-- <button onclick="closeWindow()">Close Window</button> -->
+    <!-- <button onclick="moveWindow()">Move Window</button> -->
+   
+    <button onclick="resizeWindow()">resizeTo Window </button>
+   <button onclick="resizeBy()">resizeBy Window</button>
+   <script>
+        /* JavaScript Open Close Window Method */
+ 		var myWindow;
+ 		function openWindow(){
+ 			//window.open("http://www.yahoobaba.net","yahoobaba");
+			//window.open("http://www.yahoobaba.net","_blank");
+ 			//window.open("http://www.yahoobaba.net","_parent");
+ 			// myWindow = window.open("http://www.yahoobaba.net","","width=500px,height=200px,left=100px,top=200px");
+ 			myWindow = window.open("","","width=500px,height=200px,left=100px,top=200px" );
+ 		myWindow.document.write("<p>This is my window</p>")
+        }
+
+ 		// function closeWindow(){
+		// 	myWindow = window.close();
+ 		// }
+
+        // tut87: Window moveBy() & moveTo() method
+   /*function moveWindow() {
+    //myWindow.moveTo(200,200); //apni hi website open krni ho ya phr website ka content dekhna ho tu ye moveTo method use hoga is mn web ki url nh de gyn 
+    myWindow.moveBy(200,200);
+    myWindow.focus(); } */
+    //moveBy()  work screen releative position
+// moveTo() absolute postion work 
+
+/*Tut88:*/
+
+/*function resizeWindow(){
+//rszieTo mn jo sepcific h,w set kia hoga wohi set kry ga window ki h,w 
+    myWindow.resizeTo(400,400); 
+}
+
+function resizeBy(){
+    //relative h,w mn new h, wadd krdega resizeBy method
+    myWindow.resizeBy(400,400);
+}*/
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

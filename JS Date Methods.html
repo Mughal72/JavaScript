@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Date Methods</title>
+    <script>
+
+        /*Method-1: toDateString() : The JavaScript date toDateString() method returns the date portion of a Date object in the form of string.
+      Syntax: dateObj.toDateString() 
+      Return: A string representing the date portion of a Date object  */
+
+        var now = new Date(); //now is obj of date 
+        document.write(now.toDateString());
+
+        document.write("<br>");
+
+        /*Method-2: getDate() The JavaScript date getDate() method returns the day for the specified date on the basis of local time.
+Syntax:dateObj.getDate()  Return: An integer value between 1 and 31 that represents the day of the specified date.  */
+
+        var now = new Date();
+        document.write(now.getDate() + " : is Represent the today date  ");
+
+        document.write("<br>");
+
+        /*Method-3: getFullYear() The JavaScript date getUTCFullYear() method returns the year for the specified date on the basis of universal time.
+Syntax:dateObj.getUTCFullYear()  Return: A number that represents the year. */
+
+        var now = new Date();
+        document.write(now.getFullYear() + " : is Represent the year ");
+
+        document.write("<br>");
+
+        /*Method-4: getDay() The JavaScript date getDay() method returns the value of day of the week for the specified date on the basis of local time. The value of the day starts with 0 that represents Sunday.
+Syntax:dateObj.getDay()  Return: An integer value between 0 and 6 that represents the days of the week for the specified date. */
+
+        // var now = new Date();
+        var now = new Date("Junary 18 2022");
+        document.write(now.getDay() + " : is Represent the day number ");
+
+        document.write("<br>");
+
+        /*Method-5: getMonth() The JavaScript date getMonth() method returns the integer value that represents month in the specified date on the basis of local time. The value returned by getMonth() method starts with 0 that represents January.
+Syntax:dateObj.getMonth()  Return: An integer value between 0 and 11 that represents the month in the specified date.*/
+
+        var now = new Date();
+        document.write(now.getMonth() + "  : is Represent the month number ");
+
+        document.write("<br>");
+
+        /*Method-6:  getHurs(): The JavaScript date getHours() method returns the hour for the specified date on the basis of local time.
+Syntax:The getHours() method is represented by the following syntax:
+dateObj.getHours()   Return: An integer value between 0 and 23 that represents the hour. */
+
+        var now = new Date();
+        document.write(now.getHours() + "  : is Represent the hour  ");
+
+        document.write("<br>");
+
+        /*Method-7:  getMinutes() The JavaScript date getMinutes() method returns the minutes in the specified date on the basis of local time.
+Syntax: dateObj.getMinutes()  Return: An integer value between 0 and 59 that represents the minute. */
+
+        var now = new Date();
+        document.write(now.getMinutes() + "  : is Represent the Minutes  ");
+
+        document.write("<br>");
+
+        /*Method-8: getSeconds()  The JavaScript date getSeconds() method returns the seconds in the specified date on the basis of local time.
+Return: An integer value between 0 and 59 that represents the second.*/
+
+        var now = new Date();
+        document.write(now.getSeconds() + "  : is Represent the seconds  ");
+
+        document.write("<br>");
+
+        /*Method-9: getMilliSeconds() The JavaScript date getMilliseconds() method returns the value of milliseconds in specified date on the basis of local time.
+        Rteurn: An integer value between 0 and 999 that represents milliseconds in specified date. */
+
+        var now = new Date();
+        document.write(now.getMilliseconds() + "  : is Represent the MilliSeconds");
+
+        document.write("<br>");
+
+        /*Method-10: setMinutes() */
+
+        var now = new Date();
+        now.setMinutes(30);
+        document.write(now +" : is Represent the set Minutes  ");
+
+        document.write("<br>");
+
+        /*Method-11: setDate() */
+
+        var now = new Date();
+        now.setDate(20);
+        document.write(now +" : is Represent the set date  ");
+
+        document.write("<br>");
+
+        /*Method-12: setFullYear()*/
+
+        var now = new Date();
+        now.setFullYear(2022);
+        document.write(now +" : is Represent the set full year  ");;
+
+        document.write("<br>");
+
+        /*Method-13: setMonth() */
+
+        var now = new Date();
+        now.setMonth(5);
+        document.write(now +" : is Represent the set Month  ");
+
+        document.write("<br>");
+
+        /*Method-14:setHours() */
+
+        var now = new Date();
+        now.setHours(14);
+        document.write(now +" : is Represent the set Hours  ");
+
+        document.write("<br>");
+
+        /*Method-15:setSeconds() */
+
+        var now = new Date();
+        now.setSeconds(18);
+        document.write(now +" : is Represent the set seconds  ");
+
+        document.write("<br>");
+
+        /*Method-16: setMilliSeconds() */
+
+        var now = new Date();
+        now.setMilliseconds(678);
+        document.write(now +" : is Represent the set MilliSeconds  ");
+
+        document.write("<br><br>");
+//set date in format 
+        var now = new Date();
+        document.write(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

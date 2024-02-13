@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+    <script>
+        //method -1 length
+        var str = "JavaScript is a Great is Language";
+        // var str = "       JavaScript        "  //for trim
+
+        var a = str.length;
+
+        document.write(a);
+
+        document.write("<br>");
+
+        //method -2 toLowerCase() 
+        var a = str.toLowerCase();
+        document.write(a);
+
+        document.write("<br>");
+
+        //method -3 toupperCase()
+
+        var a = str.toUpperCase();
+        document.write(a);
+
+        document.write("<<br>");
+
+        //method -4 includes()  retrun bollean value
+
+        var a = str.includes("Great");
+        document.write(a);
+
+        document.write("<br>");
+
+        //method-5 startsWith() //case sensitive 
+
+        var a = str.startsWith("JavaScript");
+        document.write(a);
+
+        document.write("<br>");
+
+        //method-6 endssWith()
+
+        var a = str.endsWith("end");
+        document.write(a);
+
+        document.write("<br>");
+
+        //method-7 search() return the posiion
+
+        var a = str.search("is");
+        document.write(a);
+
+        document.write("<br>");
+
+        //method -8 match() samename ka word/character bar bar search kry ga or uska ek array bna dega
+
+        var a = str.match(/is/g); // g means globaly
+        document.write(a);
+
+        document.write("<br");
+
+        //method-9 indexOf()
+        var a = str.indexOf("a");
+        document.write(a);
+
+        document.write("<br>");
+
+        //   //method-10 lastIndexOf()
+        //   var  a = str.lastIndexOf();
+        //   document.write(a);
+
+        document.write("<br>");
+
+        /*method-11 replace(): The replace() method searches a string for a value or a regular expression.
+The replace() method returns a new string with the value(s) replaced.
+The replace() method does not change the original string.*/
+
+        //   var  a = str.replace("JavaScript", "Php");
+
+        var a = str.replace(/is/g, "are");
+        document.write(a);
+
+        document.write("<br>");
+
+        //method-12 trim()  kisi bh word k left right exrtra spaces ko remove krta h 
+        /*The trim() method removes whitespace from both sides of a string.The trim() method does not change the original string*/
+
+        var a = str.trim();
+        alert(a);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

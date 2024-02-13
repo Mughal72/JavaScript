@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Objects</title>
+    <script>
+        /*object craetion
+        1) JavaScript Object by object literal 
+        The syntax of creating object using object literal is given below:
+        object={property1:value1,property2:value2.....propertyN:valueN}  */
+        var a ={
+            fname: 'Anber',
+            lname: 'Sattar',
+            age:    20,
+            gender: 'Female',
+            country: 'Pakistan',
+            email:   'ambersattar29@gmail.com',
+            fav_course: ['Web Development', 'Mobile Application Development', 'Artifical Intelligence'],
+            // we can aslo create more object in one object
+            living:{
+                'city': 'Hyderabad',
+                'country': 'Pakistan'
+            },
+            salary: function() {
+                return 25000;
+                
+            },
+            fullname: function(){
+                return this.fname + " " + this.lname;
+                //jo bhi object hoga uska owner kon hai us ka variable us k varibale ko print krne k liehm thi sko use kryn gyn
+            // we can not print a object directly to print this we can print this by calling the property of that object
+        // object mn jo bh function bnaty hn usy method kehty hn tu yahan salary or fullname method hongy or ye property hn a ki
+        
+        }
+        }
+        //document.write(a); [Object object] aye ga agr hm aese print krin gyn oject ko print krne ka alag way h.
+        
+        console.log(a);
+        // document.write(a.fav_course[0]);
+        // document.write(a.salary());
+        // document.write(a.fullname());
+        document.write(a.living.city);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods: concat() & Join() Method</title>
+    <script>
+         var  a = ["Anber", "Amna", "Kinza", "sheen"];
+        
+
+         //var b =  a.concat("Fatima", "Eysha"); way 1
+         //document.write(b);
+
+         //another way of concatination
+         var b = ["Amber", "Eysha"];
+        //var d = ["Neha", "Hira"];
+        var c = a.concat(b);
+        // var c = a.concat(b,d);
+        document.write(c + "<br><br>"); //now c is an array 
+        //we can merger more than one array as per our needs
+        
+//array join method join function sb arrays ki alg alg value ko ek sath mil akr ek value bna deta hai
+              var d = c.join(" <br> ");
+              document.write(d); 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
